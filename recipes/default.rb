@@ -6,6 +6,7 @@ file = node['wkhtmltox']['url'] % {codename: node['lsb']['codename'],
 
 remote_file '/root/wkhtmltox.deb' do
   source file
+  retries 3
   action :create_if_missing
 end
 
