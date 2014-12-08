@@ -15,8 +15,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define 'app', primary: true do |app|
     app.vm.hostname = "wkhtmltox.desarrollo.unlp.edu.ar"
     app.omnibus.chef_version = :latest
-    app.vm.box = "cespi/ubuntu-12.04-upgraded"
-    app.vm.box_url = "http://desarrollo.unlp.edu.ar/ubuntu-12.04-upgraded.box"
+    app.vm.box = "chef/ubuntu-12.04"
     app.vm.network :private_network, ip: "10.100.100.2"
     app.berkshelf.enabled = true
     app.vm.provision :chef_solo do |chef|
