@@ -4,7 +4,7 @@ maintainer_email 'YOUR_EMAIL'
 license          'All rights reserved'
 description      'Installs/Configures wkhtmltox'
 long_description 'Installs/Configures wkhtmltox'
-version          '0.1.1'
+version          '0.1.2'
 
 depends 'chef-sugar'
 depends 'gdebi'
